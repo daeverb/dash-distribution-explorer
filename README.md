@@ -11,7 +11,7 @@ Python versions tested are `>=3.10.x` and `<=3.11.x`
 ### Linux
 ```commandline
 git clone https://github.com/daeverb/dash-distribution-explorer.git
-cd dash-distribution-explorer.git
+cd dash-distribution-explorer
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
