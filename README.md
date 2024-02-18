@@ -5,7 +5,7 @@ This repository contains a dash application built to explore different kinds of 
 Python versions tested are `>=3.10.x` and `<=3.11.x`
 
 ## Demo
-![Dash distribution explorer showcase](dash-distributions-showcase.gif)
+![Dash distribution explorer showcase](demo.gif)
 
 ## Setup
 ### Linux
