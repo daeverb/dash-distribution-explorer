@@ -2,3 +2,9 @@ from .base import Distribution
 from .constants import BASE_FIGURE_LAYOUT
 from .binomial import Binomial
 from .poisson import Poisson
+from .geometric import Geometric
+from .negative_binomial import NegativeBinomial
+from .normal import Normal
+from .beta import Beta
+from .exponential import Exponential
+from .gamma import Gamma

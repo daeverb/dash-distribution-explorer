@@ -1,19 +1,27 @@
-from dist import Distribution, Binomial, Poisson
-from typing import Dict
+from dist import Distribution, Binomial, Poisson, Geometric, NegativeBinomial, Normal, Beta, Exponential, Gamma
+from typing import Dict, List
 
 BINOM = 'Binomial'
 POISSON = 'Poisson'
+GEOM = 'Geometric'
+NORM = 'Normal'
+BETA = 'Beta'
 
-DIST_NAMES = [
+# I don't understand these fully yet. So won't actually display,
+NBINOM = 'Negative Binomial'
+EXPON = 'Exponential'
+GAMMA = 'Gamma'
+
+DIST_NAMES: List[str] = [
     BINOM,
     POISSON,
-    # 'Geometric',
-    # 'Negative Binomial',
-    # 'Normal',
+    GEOM,
+    # NBINOM,
+    NORM,
+    BETA,
+    # EXPON,
+    # GAMMA,
     # 'Uniform',
-    # 'Exponential',
-    # 'Beta',
-    # 'Gamma',
 ]
 DIST_NAMES.sort()
 
@@ -25,6 +33,12 @@ I2D: Dict[int, str] = {i: d for d, i in D2I.items()}
 DISTNAME2DIST: Dict[str, Distribution] = {
     BINOM: Binomial(),
     POISSON: Poisson(),
+    GEOM: Geometric(),
+    NBINOM: NegativeBinomial(),
+    NORM: Normal(),
+    BETA: Beta(),
+    EXPON: Exponential(),
+    GAMMA: Gamma(),
 }
 
 
